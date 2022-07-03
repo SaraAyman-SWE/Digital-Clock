@@ -1,0 +1,220 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/*  MAIN COLOR: #087f5b
+    GRAY COLOR: #343a40 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+.container {
+  /* width: 40rem; */
+  width: 40%;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 48px;
+  /* 30 / 36 / 44 */
+  font-size: 36px;
+  letter-spacing: -0.5px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+h1 {
+  margin-bottom: 4rem;
+  /* 44 / 52 / 62 */
+  font-size: 44px;
+  /* Below 1.5 */
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  margin: 4rem 0;
+  background-color: #087f5b;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.testimonial-section2 {
+  background-color: white;
+  padding: 2rem;
+  color: #343a40;
+  border-radius: 12px;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  color: #bcc2c2;
+}
+
+.current-day {
+  color: #78797a;
+  font-weight: 700;
+}
+
+h3 {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+/* /////////////////////////////////////////////////// */
+/* ALARM STYLE */
+
+.show-modal {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem 2.5rem;
+  margin: 2rem 12rem;
+  border: none;
+  background-color: #087f5b;
+  color: white;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background-color: white;
+  padding: 4rem 14rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.set-alarm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+.time {
+  background-color: #087f5b;
+  color: white;
+  padding: 2rem;
+  border-radius: 9px;
+}
+
+.webform label {
+  text-transform: capitalize;
+  font-family: inherit;
+}
+
+.time input {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1.2rem;
+  color: #343a40;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.time input::placeholder {
+  color: #aaa;
+}
+
+.time *:focus {
+  outline: none;
+}
+
+.alarm-submit {
+  display: flex;
+  align-items: center;
+  margin: 4rem 18rem;
+  margin-bottom: 0;
+  gap: 1rem;
+}
+
+.btn,
+.btn:visited {
+  font-size: 1.2rem;
+  background-color: #087f5b;
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  font-size: 1.5rem;
+  box-shadow: 5px 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.btn-set {
+  background-color: #9be15d;
+}
+
+.btn-clear {
+  background-color: #ff585f;
+}

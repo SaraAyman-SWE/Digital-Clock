@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Digital Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="testimonial-section">
+        <div class="testimonial-section2">
+          <div class="days">
+            <div class="day1">MON</div>
+            <div class="day2">TUE</div>
+            <div class="day3">WED</div>
+            <div class="day4">THU</div>
+            <div class="day5">FRI</div>
+            <div class="day6">SAT</div>
+            <div class="day7">SUN</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div class="alarm">
+        <button class="show-modal">Set Alarm</button>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <h1>Set Alarm After</h1>
+          <div class="set-alarm">
+            <div class="time">
+              <label for="hours">HOURS</label>
+              <input type="text" name="hours" id="hours" placeholder="0">
+            </div>
+            <div class="time">
+              <label for="minutes">MINUTES</label>
+              <input type="text" name="minutes" id="minutes" placeholder="0">
+            </div>
+            <div class="time">
+              <label for="seconds">SECONDS</label>
+              <input type="text" name="seconds" id="seconds" placeholder="0">
+            </div>
+          </div>
+          <div class="alarm-submit">
+            <button class="btn btn-set">SET</button>
+            <button class="btn btn-clear">CLEAR</button>
+          </div>
+        </div>
+      </div>
+    <div class="overlay hidden"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
